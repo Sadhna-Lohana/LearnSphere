@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn new skills online with LearnSphere. Explore web development, design and digital marketing courses.">
+  <title>LearnSphere | Learn Without Limits</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Learn<span>Sphere.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#instructors">Instructors</a>
+        <a href="#testimonials">Student Reviews</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+        <a href="#courses" class="nav-btn">Explore Courses</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">YOUR FUTURE STARTS HERE</span>
+          <h1>Learn New Skills.<br>
+            <span>Build Your Future.</span>
+          </h1>
+          <p>
+            Discover practical online courses, learn from anywhere,
+            and take the next step toward your goals.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#courses" class="btn btn-primary">Explore Courses →</a>
+            <a href="#about" class="btn btn-light">Learn More</a>
+          </div>
+
+          <div class="hero-stats">
+            <div><strong>4+</strong><span>Learning Topics</span></div>
+            <div><strong>100%</strong><span>Learn at Your Pace</span></div>
+            <div><strong>24/7</strong><span>Flexible Learning</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"
+            alt="Student learning online using a laptop">
+          <div class="floating-card">
+            <span class="floating-icon">✦</span>
+            <div>
+              <strong>Keep Growing!</strong>
+              <p>Your learning journey begins today.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">LEARN SOMETHING NEW</span>
+          <h2>Explore Our Categories</h2>
+          <p>Choose a skill and start building your knowledge.</p>
+        </div>
+
+        <div class="category-grid">
+          <a href="#courses" class="category-card" data-category="Development">
+            <span class="category-icon purple">⌘</span>
+            <h3>Development</h3>
+            <p>Build websites and digital products.</p>
+          </a>
+
+          <a href="#courses" class="category-card" data-category="Design">
+            <span class="category-icon pink">✎</span>
+            <h3>Graphic Design</h3>
+            <p>Turn creative ideas into designs.</p>
+          </a>
+
+          <a href="#courses" class="category-card" data-category="Marketing">
+            <span class="category-icon orange">↗</span>
+            <h3>Marketing</h3>
+            <p>Understand the digital world.</p>
+          </a>
+
+          <a href="#courses" class="category-card" data-category="Business">
+            <span class="category-icon green">▤</span>
+            <h3>Business</h3>
+            <p>Develop useful professional skills.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="courses section" id="courses">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">OUR LEARNING LIBRARY</span>
+          <h2>Popular Courses</h2>
+          <p>Find a course that matches your interests.</p>
+        </div>
+
+        <div class="course-tools">
+          <div class="search-box">
+            <span>⌕</span>
+            <input type="search" id="courseSearch"
+              placeholder="Search courses..."
+              aria-label="Search courses">
+          </div>
+
+          <select id="categoryFilter" aria-label="Filter courses">
+            <option value="All">All Categories</option>
+            <option value="Development">Development</option>
+            <option value="Design">Graphic Design</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Business">Business</option>
+          </select>
+        </div>
+
+        <div class="course-grid" id="courseGrid">
+
+          <article class="course-card" data-category="Development"
+            data-title="Complete Web Development">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80"
+              alt="Web development workspace" loading="lazy">
+            <div class="course-info">
+              <span class="course-tag">Development</span>
+              <h3>Complete Web Development</h3>
+              <p>Learn HTML, CSS and JavaScript from the beginning.</p>
+              <div class="course-meta"><span>◷ Beginner</span><span>Self-paced</span></div>
+              <div class="course-bottom">
+                <strong>Free</strong>
+                <button class="enroll-btn" data-course="Complete Web Development">Enroll Now →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card" data-category="Design"
+            data-title="Graphic Design Essentials">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=700&q=80"
+              alt="Creative graphic design work" loading="lazy">
+            <div class="course-info">
+              <span class="course-tag">Design</span>
+              <h3>Graphic Design Essentials</h3>
+              <p>Explore color, typography, layouts and visual design.</p>
+              <div class="course-meta"><span>◷ Beginner</span><span>Self-paced</span></div>
+              <div class="course-bottom">
+                <strong>Free</strong>
+                <button class="enroll-btn" data-course="Graphic Design Essentials">Enroll Now →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card" data-category="Development"
+            data-title="JavaScript for Beginners">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80"
+              alt="Programming code on a screen" loading="lazy">
+            <div class="course-info">
+              <span class="course-tag">Development</span>
+              <h3>JavaScript for Beginners</h3>
+              <p>Make websites interactive with JavaScript basics.</p>
+              <div class="course-meta"><span>◷ Beginner</span><span>Self-paced</span></div>
+              <div class="course-bottom">
+                <strong>Free</strong>
+                <button class="enroll-btn" data-course="JavaScript for Beginners">Enroll Now →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card" data-category="Marketing"
+            data-title="Digital Marketing Basics">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
+              alt="Digital marketing analytics dashboard" loading="lazy">
+            <div class="course-info">
+              <span class="course-tag">Marketing</span>
+              <h3>Digital Marketing Basics</h3>
+              <p>Discover content, social media and online marketing.</p>
+              <div class="course-meta"><span>◷ Beginner</span><span>Self-paced</span></div>
+              <div class="course-bottom">
+                <strong>Free</strong>
+                <button class="enroll-btn" data-course="Digital Marketing Basics">Enroll Now →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card" data-category="Business"
+            data-title="Business Skills Starter">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=80"
+              alt="Planning and working at a desk" loading="lazy">
+            <div class="course-info">
+              <span class="course-tag">Business</span>
+              <h3>Business Skills Starter</h3>
+              <p>Practice planning, communication and organization.</p>
+              <div class="course-meta"><span>◷ Beginner</span><span>Self-paced</span></div>
+              <div class="course-bottom">
+                <strong>Free</strong>
+                <button class="enroll-btn" data-course="Business Skills Starter">Enroll Now →</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card" data-category="Design"
+            data-title="Creative Design Principles">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=80"
+              alt="Creative work and note taking" loading="lazy">
+            <div class="course-info">
+              <span class="course-tag">Design</span>
+              <h3>Creative Design Principles</h3>
+              <p>Learn visual balance, composition and creativity.</p>
+              <div class="course-meta"><span>◷ Beginner</span><span>Self-paced</span></div>
+              <div class="course-bottom">
+                <strong>Free</strong>
+                <button class="enroll-btn" data-course="Creative Design Principles">Enroll Now →</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+          No courses found. Try another search or category.
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=85"
+            alt="Students learning and working together" loading="lazy">
+        </div>
+
+        <div class="about-content">
+          <span class="eyebrow">WHY LEARNSPHERE?</span>
+          <h2>Learning That Fits Your Life</h2>
+          <p>
+            We believe learning should be simple, accessible and flexible.
+            Explore new subjects and build skills at your own pace.
+          </p>
+          <ul class="benefits">
+            <li>✓ Beginner-friendly learning topics</li>
+            <li>✓ Flexible, self-paced learning</li>
+            <li>✓ Practical skills for personal growth</li>
+            <li>✓ Learn from wherever you are</li>
+          </ul>
+          <a href="#courses" class="btn btn-primary">Start Exploring →</a>
+        </div>
+      </div>
+    </section>
+    
+<!-- How It Works -->
+<section class="how-it-works section" id="how-it-works">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">SIMPLE LEARNING JOURNEY</span>
+      <h2>How It Works</h2>
+      <p>Start your learning journey in three simple steps.</p>
+    </div>
+
+    <div class="steps-grid">
+
+      <article class="step-card">
+        <div class="step-number">01</div>
+        <div class="step-icon">⌕</div>
+        <h3>Choose a Course</h3>
+        <p>
+          Explore different subjects and choose a course
+          that matches your interests.
+        </p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">02</div>
+        <div class="step-icon">▶</div>
+        <h3>Start Learning</h3>
+        <p>
+          Follow lessons, explore new concepts and learn
+          at a pace that suits you.
+        </p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">03</div>
+        <div class="step-icon">✦</div>
+        <h3>Build Your Skills</h3>
+        <p>
+          Practise what you learn and work towards
+          your personal and professional goals.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+    
+<!-- Meet Our Instructors -->
+<section class="instructors section" id="instructors">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">LEARN WITH CONFIDENCE</span>
+      <h2>Meet Our Instructors</h2>
+      <p>
+        Explore the kinds of skills and subjects you can learn
+        on your educational journey.
+      </p>
+    </div>
+
+    <div class="instructor-grid">
+
+      <article class="instructor-card">
+        <img
+          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80"
+          alt="Illustrative instructor profile for web development"
+          loading="lazy">
+
+        <div class="instructor-info">
+          <span class="instructor-subject">WEB DEVELOPMENT</span>
+          <h3>Alex Morgan</h3>
+          <p>HTML, CSS and JavaScript</p>
+          <span class="instructor-level">Beginner-friendly topics</span>
+        </div>
+      </article>
+
+      <article class="instructor-card">
+        <img
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"
+          alt="Illustrative instructor profile for graphic design"
+          loading="lazy">
+
+        <div class="instructor-info">
+          <span class="instructor-subject">GRAPHIC DESIGN</span>
+          <h3>Sophia Taylor</h3>
+          <p>Typography, colour and layout</p>
+          <span class="instructor-level">Creative learning topics</span>
+        </div>
+      </article>
+
+      <article class="instructor-card">
+        <img
+          src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80"
+          alt="Illustrative instructor profile for digital marketing"
+          loading="lazy">
+
+        <div class="instructor-info">
+          <span class="instructor-subject">DIGITAL MARKETING</span>
+          <h3>Daniel James</h3>
+          <p>Content and social media basics</p>
+          <span class="instructor-level">Digital skills topics</span>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="demo-note">
+      Sample instructor profiles for portfolio demonstration.
+      No real instructor affiliation is implied.
+    </p>
+
+  </div>
+</section>
+
+<!-- Student Testimonials -->
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">STUDENT STORIES</span>
+      <h2>What Our Learners Say</h2>
+      <p>Discover how learning new skills can inspire your journey.</p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <!-- Testimonial 1 -->
+      <article class="testimonial-card">
+        <div class="quote-icon">“</div>
+
+        <div class="stars" aria-label="5 out of 5 stars">
+          ★★★★★
+        </div>
+
+        <p class="testimonial-text">
+          The beginner-friendly approach makes it easier to understand
+          web development concepts and practise new skills.
+        </p>
+
+        <div class="student-info">
+          <div class="student-avatar avatar-purple">A</div>
+          <div>
+            <h3>Ali Ahmed</h3>
+            <span>Web Development Learner</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Testimonial 2 -->
+      <article class="testimonial-card">
+        <div class="quote-icon">“</div>
+
+        <div class="stars" aria-label="5 out of 5 stars">
+          ★★★★★
+        </div>
+
+        <p class="testimonial-text">
+          I enjoy exploring creative ideas and learning about colours,
+          typography and design principles at my own pace.
+        </p>
+
+        <div class="student-info">
+          <div class="student-avatar avatar-pink">S</div>
+          <div>
+            <h3>Sara Khan</h3>
+            <span>Graphic Design Learner</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Testimonial 3 -->
+      <article class="testimonial-card">
+        <div class="quote-icon">“</div>
+
+        <div class="stars" aria-label="5 out of 5 stars">
+          ★★★★★
+        </div>
+
+        <p class="testimonial-text">
+          The course categories help me explore different subjects
+          and choose the skills I want to learn next.
+        </p>
+
+        <div class="student-info">
+          <div class="student-avatar avatar-green">M</div>
+          <div>
+            <h3>Mohsin Ali</h3>
+            <span>Digital Skills Learner</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Frequently Asked Questions -->
+<section class="faq section" id="faq">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">GOT QUESTIONS?</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Find answers to common questions about LearnSphere.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>What is LearnSphere?</summary>
+        <div class="faq-answer">
+          <p>
+            LearnSphere is an online learning platform concept where
+            learners can explore different subjects and discover new skills.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are the courses free?</summary>
+        <div class="faq-answer">
+          <p>
+            The courses displayed in this portfolio demo are labelled
+            free. Real lessons and course enrollment are not connected yet.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can beginners use LearnSphere?</summary>
+        <div class="faq-answer">
+          <p>
+            Yes! The sample course collection focuses on beginner-friendly
+            topics such as HTML, CSS, JavaScript and graphic design.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do I need to attend classes at a fixed time?</summary>
+        <div class="faq-answer">
+          <p>
+            The sample courses are presented as self-paced learning.
+            A real platform would need actual course materials to support this.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Will I receive a certificate?</summary>
+        <div class="faq-answer">
+          <p>
+            Certificate generation is not currently available.
+            It could be added as a future feature of LearnSphere.
+          </p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+    
+<!-- Newsletter Section -->
+<section class="newsletter section" id="newsletter">
+  <div class="container">
+    <div class="newsletter-box">
+
+      <div class="newsletter-content">
+        <span class="eyebrow">STAY IN THE LOOP</span>
+        <h2>Keep Learning. Keep Growing.</h2>
+        <p>
+          Get learning tips, course updates and fresh ideas
+          delivered to your inbox.
+        </p>
+      </div>
+
+      <form class="newsletter-form" id="newsletterForm">
+        <label for="newsletterEmail">Your email address</label>
+
+        <div class="newsletter-input-group">
+          <input
+            type="email"
+            id="newsletterEmail"
+            name="email"
+            placeholder="Enter your email address"
+            autocomplete="email"
+            required
+            maxlength="254"
+          >
+
+          <button type="submit" class="btn btn-primary">
+            Subscribe →
+          </button>
+        </div>
+
+        <p class="newsletter-message" id="newsletterMessage"
+          role="status" aria-live="polite">
+        </p>
+
+        <p class="newsletter-note">
+          This is a demo form. Your email will not be stored or sent.
+        </p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Call to Action -->
+    <section class="cta section" id="contact">
+      <div class="container cta-inner">
+        <span class="eyebrow">YOUR JOURNEY STARTS TODAY</span>
+        <h2>Ready to Learn Something New?</h2>
+        <p>Choose your first course and take a step toward your goals.</p>
+        <a href="#courses" class="btn btn-white">Find Your Course →</a>
+      </div>
+    </section>
+  </main>
+
+  
+<!-- Professional Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+
+    <div class="footer-main">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          Learn<span>Sphere.</span>
+        </a>
+
+        <p>
+          Discover new skills, explore your interests
+          and take the next step in your learning journey.
+        </p>
+
+        <a href="#courses" class="footer-cta">
+          Explore Courses →
+        </a>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#instructors">Instructors</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <!-- Learning -->
+      <div class="footer-column">
+        <h3>Explore Learning</h3>
+        <ul>
+          <li><a href="#courses">All Courses</a></li>
+          <li><a href="#courses">Web Development</a></li>
+          <li><a href="#courses">Graphic Design</a></li>
+          <li><a href="#courses">Digital Marketing</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-column" id="footer-contact">
+        <h3>Get in Touch</h3>
+        <p class="footer-contact-text">
+          Have a question about our learning platform?
+        </p>
+        <a class="footer-email"
+          href="mailto:hello@example.com">
+          hello@example.com
+        </a>
+        <a href="#newsletter" class="footer-newsletter-link">
+          Join Our Newsletter →
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © <span id="year"></span> LearnSphere.
+        Educational portfolio demo.
+      </p>
+
+      <a href="#home" class="back-to-top">
+        Back to Top ↑
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+  <!-- Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
