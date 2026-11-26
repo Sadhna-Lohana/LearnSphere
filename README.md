@@ -39,7 +39,7 @@ LearnSphere/
 
 
 ## 🌐 Live Demo
-Coming Soon
+[View Live Website](http://learnsphere-website.netlify.app/)
 
 ## 👩‍💻 Author
 Sadhna Lohana
